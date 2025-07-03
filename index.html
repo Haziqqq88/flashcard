@@ -83,6 +83,7 @@
                 </div>
             </div>
         </div>
+
         <!-- Elephant -->
         <div class="flashcard" onclick="flipCard(event, this)">
             <div class="flashcard-inner">
@@ -95,6 +96,7 @@
                 </div>
             </div>
         </div>
+
         <!-- Wolf -->
         <div class="flashcard" onclick="flipCard(event, this)">
             <div class="flashcard-inner">
@@ -107,6 +109,7 @@
                 </div>
             </div>
         </div>
+
         <!-- Eagle -->
         <div class="flashcard" onclick="flipCard(event, this)">
             <div class="flashcard-inner">
@@ -119,18 +122,20 @@
                 </div>
             </div>
         </div>
-        <!-- Ostrich -->
+
+        <!-- Zebra (was Ostrich) -->
         <div class="flashcard" onclick="flipCard(event, this)">
             <div class="flashcard-inner">
                 <div class="flashcard-front">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/0/0f/Ostrich_-_Masai_Mara.jpg" alt="Ostrich">
-                    <div class="animal-name">🪿 Ostrich</div>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/0/0e/Plains_Zebra_Equus_quagga.jpg" alt="Zebra">
+                    <div class="animal-name">🦓 Zebra</div>
                 </div>
                 <div class="flashcard-back">
-                    <button onclick="playSound(event, 'ostrich')">🪿 Boom!</button>
+                    <button onclick="playSound(event, 'zebra')">🦓 Neigh!</button>
                 </div>
             </div>
         </div>
+
         <!-- Flamingo -->
         <div class="flashcard" onclick="flipCard(event, this)">
             <div class="flashcard-inner">
@@ -143,18 +148,20 @@
                 </div>
             </div>
         </div>
-        <!-- Pangolin -->
+
+        <!-- Owl (was Pangolin) -->
         <div class="flashcard" onclick="flipCard(event, this)">
             <div class="flashcard-inner">
                 <div class="flashcard-front">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/2/23/Manis_pentadactyla_-_Kunming_Zoo_-_01.jpg" alt="Pangolin">
-                    <div class="animal-name">🦔 Pangolin</div>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/9/9e/Tyto_alba_-British_Wildlife_Centre-8a.jpg" alt="Owl">
+                    <div class="animal-name">🦉 Owl</div>
                 </div>
                 <div class="flashcard-back">
-                    <button onclick="playSound(event, 'pangolin')">🦔 Sniff!</button>
+                    <button onclick="playSound(event, 'owl')">🦉 Hoot!</button>
                 </div>
             </div>
         </div>
+
         <!-- Rhinoceros -->
         <div class="flashcard" onclick="flipCard(event, this)">
             <div class="flashcard-inner">
@@ -167,6 +174,7 @@
                 </div>
             </div>
         </div>
+
         <!-- Kangaroo -->
         <div class="flashcard" onclick="flipCard(event, this)">
             <div class="flashcard-inner">
@@ -179,15 +187,16 @@
                 </div>
             </div>
         </div>
-        <!-- Koala -->
+
+        <!-- Penguin (was Koala) -->
         <div class="flashcard" onclick="flipCard(event, this)">
             <div class="flashcard-inner">
                 <div class="flashcard-front">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/4/49/Koala_climbing_tree.jpg" alt="Koala">
-                    <div class="animal-name">🐨 Koala</div>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/8/88/Aptenodytes_forsteri_-Snow_Hill_Island%2C_Antarctica_-adults_and_chick-8.jpg" alt="Penguin">
+                    <div class="animal-name">🐧 Penguin</div>
                 </div>
                 <div class="flashcard-back">
-                    <button onclick="playSound(event, 'koala')">🐨 Squeak!</button>
+                    <button onclick="playSound(event, 'penguin')">🐧 Squawk!</button>
                 </div>
             </div>
         </div>
@@ -198,12 +207,12 @@
     <audio id="elephant" src="Elephant Trumphet.mp3"></audio>
     <audio id="wolf" src="Wolf Howl.mp3"></audio>
     <audio id="eagle" src="Eagle Screech.mp3"></audio>
-    <audio id="ostrich" src="Ostrich.mp3"></audio>
+    <audio id="zebra" src="zebra-zebra-sound.mp3"></audio>
     <audio id="flamingo" src="flock-of-flamingos.mp3"></audio>
-    <audio id="pangolin" src="Pangolin.mp3"></audio>
+    <audio id="owl" src="owl.mp3"></audio>
     <audio id="rhinoceros" src="badak-220048.mp3"></audio>
     <audio id="kangaroo" src="kangaroo.mp3"></audio>
-    <audio id="koala" src="Koala.mp3"></audio>
+    <audio id="penguin" src="gentoo-penguin.mp3"></audio>
 
     <script>
         function flipCard(event, card) {
