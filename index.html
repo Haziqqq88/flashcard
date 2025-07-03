@@ -75,7 +75,7 @@
         <div class="flashcard" onclick="flipCard(event, this)">
             <div class="flashcard-inner">
                 <div class="flashcard-front">
-                    <img src="https://cdn.pixabay.com/photo/2017/10/25/16/54/lion-2888519_640.jpg" alt="Lion">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/7/73/Lion_waiting_in_Namibia.jpg" alt="Lion">
                     <div class="animal-name">🦁 Lion</div>
                 </div>
                 <div class="flashcard-back">
@@ -83,12 +83,12 @@
                 </div>
             </div>
         </div>
-        
+
         <!-- Elephant -->
         <div class="flashcard" onclick="flipCard(event, this)">
             <div class="flashcard-inner">
                 <div class="flashcard-front">
-                    <img src="https://cdn.pixabay.com/photo/2016/11/14/04/45/elephant-1822636_640.jpg" alt="Elephant">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/3/37/African_Bush_Elephant.jpg" alt="Elephant">
                     <div class="animal-name">🐘 Elephant</div>
                 </div>
                 <div class="flashcard-back">
@@ -96,12 +96,12 @@
                 </div>
             </div>
         </div>
-        
+
         <!-- Wolf -->
         <div class="flashcard" onclick="flipCard(event, this)">
             <div class="flashcard-inner">
                 <div class="flashcard-front">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Canis_lupus_laying.jpg/320px-Canis_lupus_laying.jpg" alt="Wolf">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/0/09/Canis_lupus_laying.jpg" alt="Wolf">
                     <div class="animal-name">🐺 Wolf</div>
                 </div>
                 <div class="flashcard-back">
@@ -114,7 +114,7 @@
         <div class="flashcard" onclick="flipCard(event, this)">
             <div class="flashcard-inner">
                 <div class="flashcard-front">
-                    <img src="https://cdn.pixabay.com/photo/2017/06/09/09/39/adler-2386314_640.jpg" alt="Eagle">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/1/1d/Haliaeetus_leucocephalus_-Alaska_-USA_-flying-8.jpg" alt="Eagle">
                     <div class="animal-name">🦅 Eagle</div>
                 </div>
                 <div class="flashcard-back">
@@ -127,7 +127,7 @@
         <div class="flashcard" onclick="flipCard(event, this)">
             <div class="flashcard-inner">
                 <div class="flashcard-front">
-                    <img src="https://cdn.pixabay.com/photo/2018/04/21/19/08/ostrich-3339218_640.jpg" alt="Ostrich">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/0/0f/Ostrich_-_Masai_Mara.jpg" alt="Ostrich">
                     <div class="animal-name">🪿 Ostrich</div>
                 </div>
                 <div class="flashcard-back">
@@ -140,7 +140,7 @@
         <div class="flashcard" onclick="flipCard(event, this)">
             <div class="flashcard-inner">
                 <div class="flashcard-front">
-                    <img src="https://cdn.pixabay.com/photo/2016/11/18/12/15/flamingo-1836461_640.jpg" alt="Flamingo">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/7/72/Phoenicopterus_ruber_in_S%C3%A3o_Paulo_Zoo.jpg" alt="Flamingo">
                     <div class="animal-name">🦩 Flamingo</div>
                 </div>
                 <div class="flashcard-back">
@@ -166,7 +166,7 @@
         <div class="flashcard" onclick="flipCard(event, this)">
             <div class="flashcard-inner">
                 <div class="flashcard-front">
-                    <img src="https://cdn.pixabay.com/photo/2014/05/12/20/37/rhinoceros-342957_640.jpg" alt="Rhinoceros">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/e/e9/White_Rhinoceros.jpg" alt="Rhinoceros">
                     <div class="animal-name">🦏 Rhinoceros</div>
                 </div>
                 <div class="flashcard-back">
@@ -179,7 +179,7 @@
         <div class="flashcard" onclick="flipCard(event, this)">
             <div class="flashcard-inner">
                 <div class="flashcard-front">
-                    <img src="https://cdn.pixabay.com/photo/2017/05/10/20/29/kangaroo-2300725_640.jpg" alt="Kangaroo">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/0/0c/Kangaroo_Australia_01.jpg" alt="Kangaroo">
                     <div class="animal-name">🦘 Kangaroo</div>
                 </div>
                 <div class="flashcard-back">
@@ -192,7 +192,7 @@
         <div class="flashcard" onclick="flipCard(event, this)">
             <div class="flashcard-inner">
                 <div class="flashcard-front">
-                    <img src="https://cdn.pixabay.com/photo/2016/12/28/17/32/koala-1936008_640.jpg" alt="Koala">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/4/49/Koala_climbing_tree.jpg" alt="Koala">
                     <div class="animal-name">🐨 Koala</div>
                 </div>
                 <div class="flashcard-back">
@@ -219,7 +219,6 @@
             if (event.target.tagName.toLowerCase() === 'button') return;
             card.classList.toggle('flipped');
         }
-
         function playSound(event, animal) {
             event.stopPropagation();
             const sound = document.getElementById(animal);
