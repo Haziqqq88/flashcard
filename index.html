@@ -208,10 +208,240 @@
     <audio id="wolf" src="Wolf Howl.mp3"></audio>
     <audio id="eagle" src="Eagle Screech.mp3"></audio>
     <audio id="ostrich" src="Ostrich.mp3"></audio>
-    <audio id="flamingo" src="Flamingo.mp3"></audio>
+    <audio id="flamingo" src="<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        .flashcard-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            justify-content: center;
+            padding: 20px;
+            font-family: Arial, sans-serif;
+        }
+        .flashcard {
+            width: 200px;
+            height: 200px;
+            perspective: 1000px;
+            cursor: pointer;
+            position: relative;
+        }
+        .flashcard-inner {
+            width: 100%;
+            height: 100%;
+            transition: transform 0.6s;
+            transform-style: preserve-3d;
+            position: relative;
+        }
+        .flashcard.flipped .flashcard-inner {
+            transform: rotateY(180deg);
+        }
+        .flashcard-front, .flashcard-back {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            backface-visibility: hidden;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            background: #f9f9f9;
+        }
+        .flashcard-back {
+            transform: rotateY(180deg);
+            background: #e3f2fd;
+        }
+        .flashcard img {
+            max-width: 80%;
+            max-height: 60%;
+            border-radius: 8px;
+        }
+        .animal-name {
+            font-weight: bold;
+            margin: 10px 0;
+            font-size: 18px;
+        }
+        button {
+            background: #4285f4;
+            color: white;
+            border: none;
+            padding: 8px 12px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 5px;
+        }
+        button:hover {
+            background: #3367d6;
+        }
+    </style>
+</head>
+<body>
+    <div class="flashcard-container">
+        <!-- Lion -->
+        <div class="flashcard" onclick="flipCard(event, this)">
+            <div class="flashcard-inner">
+                <div class="flashcard-front">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/7/73/Lion_waiting_in_Namibia.jpg" alt="Lion">
+                    <div class="animal-name">🦁 Lion</div>
+                </div>
+                <div class="flashcard-back">
+                    <button onclick="playSound(event, 'lion')">🦁 Roar!</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Elephant -->
+        <div class="flashcard" onclick="flipCard(event, this)">
+            <div class="flashcard-inner">
+                <div class="flashcard-front">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/3/37/African_Bush_Elephant.jpg" alt="Elephant">
+                    <div class="animal-name">🐘 Elephant</div>
+                </div>
+                <div class="flashcard-back">
+                    <button onclick="playSound(event, 'elephant')">🐘 Trumpet!</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Wolf -->
+        <div class="flashcard" onclick="flipCard(event, this)">
+            <div class="flashcard-inner">
+                <div class="flashcard-front">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/0/09/Canis_lupus_laying.jpg" alt="Wolf">
+                    <div class="animal-name">🐺 Wolf</div>
+                </div>
+                <div class="flashcard-back">
+                    <button onclick="playSound(event, 'wolf')">🐺 Howl!</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Eagle -->
+        <div class="flashcard" onclick="flipCard(event, this)">
+            <div class="flashcard-inner">
+                <div class="flashcard-front">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/1/1d/Haliaeetus_leucocephalus_-Alaska_-USA_-flying-8.jpg" alt="Eagle">
+                    <div class="animal-name">🦅 Eagle</div>
+                </div>
+                <div class="flashcard-back">
+                    <button onclick="playSound(event, 'eagle')">🦅 Screech!</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Ostrich -->
+        <div class="flashcard" onclick="flipCard(event, this)">
+            <div class="flashcard-inner">
+                <div class="flashcard-front">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/0/0f/Ostrich_-_Masai_Mara.jpg" alt="Ostrich">
+                    <div class="animal-name">🪿 Ostrich</div>
+                </div>
+                <div class="flashcard-back">
+                    <button onclick="playSound(event, 'ostrich')">🪿 Boom!</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Flamingo -->
+        <div class="flashcard" onclick="flipCard(event, this)">
+            <div class="flashcard-inner">
+                <div class="flashcard-front">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/7/72/Phoenicopterus_ruber_in_S%C3%A3o_Paulo_Zoo.jpg" alt="Flamingo">
+                    <div class="animal-name">🦩 Flamingo</div>
+                </div>
+                <div class="flashcard-back">
+                    <button onclick="playSound(event, 'flamingo')">🦩 Honk!</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Pangolin -->
+        <div class="flashcard" onclick="flipCard(event, this)">
+            <div class="flashcard-inner">
+                <div class="flashcard-front">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/2/23/Manis_pentadactyla_-_Kunming_Zoo_-_01.jpg" alt="Pangolin">
+                    <div class="animal-name">🦔 Pangolin</div>
+                </div>
+                <div class="flashcard-back">
+                    <button onclick="playSound(event, 'pangolin')">🦔 Sniff!</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Rhinoceros -->
+        <div class="flashcard" onclick="flipCard(event, this)">
+            <div class="flashcard-inner">
+                <div class="flashcard-front">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/e/e9/White_Rhinoceros.jpg" alt="Rhinoceros">
+                    <div class="animal-name">🦏 Rhinoceros</div>
+                </div>
+                <div class="flashcard-back">
+                    <button onclick="playSound(event, 'rhinoceros')">🦏 Grunt!</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Kangaroo -->
+        <div class="flashcard" onclick="flipCard(event, this)">
+            <div class="flashcard-inner">
+                <div class="flashcard-front">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/0/0c/Kangaroo_Australia_01.jpg" alt="Kangaroo">
+                    <div class="animal-name">🦘 Kangaroo</div>
+                </div>
+                <div class="flashcard-back">
+                    <button onclick="playSound(event, 'kangaroo')">🦘 Thump!</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Koala -->
+        <div class="flashcard" onclick="flipCard(event, this)">
+            <div class="flashcard-inner">
+                <div class="flashcard-front">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/4/49/Koala_climbing_tree.jpg" alt="Koala">
+                    <div class="animal-name">🐨 Koala</div>
+                </div>
+                <div class="flashcard-back">
+                    <button onclick="playSound(event, 'koala')">🐨 Squeak!</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Audio Elements -->
+    <audio id="lion" src="Lion Roar.mp3"></audio>
+    <audio id="elephant" src="Elephant Trumphet.mp3"></audio>
+    <audio id="wolf" src="Wolf Howl.mp3"></audio>
+    <audio id="eagle" src="Eagle Screech.mp3"></audio>
+    <audio id="ostrich" src="Ostrich.mp3"></audio>
+    <audio id="flamingo" src="flock-of-flamingos.mp3"></audio>
+    <audio id="pangolin" src="Pangolin.mp3"></audio>
+    <audio id="rhinoceros" src="badak-220048.mp3"></audio>
+    <audio id="kangaroo" src="kangaroo.mp3"></audio>
+    <audio id="koala" src="Koala.mp3"></audio>
+
+    <script>
+        function flipCard(event, card) {
+            if (event.target.tagName.toLowerCase() === 'button') return;
+            card.classList.toggle('flipped');
+        }
+        function playSound(event, animal) {
+            event.stopPropagation();
+            const sound = document.getElementById(animal);
+            sound.currentTime = 0;
+            sound.play().catch(e => console.log("Playback failed:", e));
+        }
+    </script>
+</body>
+</html>
+"></audio>
     <audio id="pangolin" src="Pangolin.mp3"></audio>
     <audio id="rhinoceros" src="Rhinoceros.mp3"></audio>
-    <audio id="kangaroo" src="Kangaroo.mp3"></audio>
+    <audio id="kangaroo" src="kangaroo.mp3"></audio>
     <audio id="koala" src="Koala.mp3"></audio>
 
     <script>
